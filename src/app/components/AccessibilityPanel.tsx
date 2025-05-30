@@ -93,7 +93,8 @@ const AccessibilityPanel = () => {
     setIsOpen(prev => {
       const newState = !prev;
       if (!newState) {
-        document.querySelector('.accessibility-float-btn')?.focus();
+        const floatBtn = document.querySelector('.accessibility-float-btn') as HTMLElement;
+        floatBtn?.focus();
       } else {
         setTimeout(() => {
           const panel = document.querySelector('#accessibility-panel-title') as HTMLElement;
