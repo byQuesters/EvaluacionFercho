@@ -121,7 +121,8 @@ export default function Contacto() {
       setCaptchaResult(num1 + num2);
       
       setSubmitMessage('¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.');
-    } catch (error) {
+    } catch {
+      // Fixed: Removed unused error parameter
       setSubmitMessage('Error al procesar la solicitud. Por favor, inténtalo más tarde.');
     } finally {
       setIsSubmitting(false);

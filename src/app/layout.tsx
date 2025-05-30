@@ -17,16 +17,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="es" className="scroll-smooth">
       <head>
-        <link 
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" 
-          rel="stylesheet"
-        />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.webmanifest" />
       </head>
-      <body className="min-h-screen flex flex-col bg-white text-gray-900 transition-colors duration-300">
+      <body className="min-h-screen flex flex-col bg-white text-gray-900 transition-colors duration-300 font-sans">
         <a 
           href="#main-content" 
           className="skip-link sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:bg-green-700 focus:text-white focus:px-4 focus:py-2 focus:rounded focus:z-50"
